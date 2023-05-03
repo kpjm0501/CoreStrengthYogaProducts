@@ -4,16 +4,16 @@ namespace CoreStrengthYogaProducts.Controllers;
 
 [ApiController]
 [Route("/api/v1/[controller]")]
-public class WeatherForecastController : ControllerBase
+public class RegistrationController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ILogger<RegistrationController> _logger;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public RegistrationController(ILogger<RegistrationController> logger)
     {
         _logger = logger;
     }
